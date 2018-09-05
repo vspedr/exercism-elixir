@@ -1,0 +1,49 @@
+Excluding tags: [:pending]
+
+
+PigLatinTest
+  * test consecutive consonants are treated like a single consonant word beginning with th  * test consecutive consonants are treated like a single consonant word beginning with th (skipped)
+  * test ay is added to words that start with vowels word beginning with i  * test ay is added to words that start with vowels word beginning with i (4.1ms)
+  * test phrases are translated a whole phrase  * test phrases are translated a whole phrase (skipped)
+  * test ay is added to words that start with vowels word beginning with e  * test ay is added to words that start with vowels word beginning with e (0.02ms)
+  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with x  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with x (skipped)
+  * test 'x' and 'y', when followed by a consonant, are treated like a vowel word beginning with xr  * test 'x' and 'y', when followed by a consonant, are treated like a vowel word beginning with xr (skipped)
+  * test consecutive consonants are treated like a single consonant word beginning with qu  * test consecutive consonants are treated like a single consonant word beginning with qu (skipped)
+  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with p  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with p (10.3ms)
+
+  1) test first consonant letters and ay are moved to the end of words that start with consonants word beginning with p (PigLatinTest)
+     pig-latin/pig_latin_test.exs:45
+     ** (Protocol.UndefinedError) protocol Enumerable not implemented for "pig"
+     code: assert PigLatin.translate("pig") == "igpay"
+     stacktrace:
+       (elixir) lib/enum.ex:1: Enumerable.impl_for!/1
+       (elixir) lib/enum.ex:141: Enumerable.reduce/3
+       (elixir) lib/enum.ex:1919: Enum.split_while/2
+       pig-latin/pig_latin.exs:28: PigLatin.to_pig_latin/1
+       (elixir) lib/enum.ex:1294: Enum."-map/2-lists^map/1-0-"/2
+       pig-latin/pig_latin.exs:19: PigLatin.translate/1
+       pig-latin/pig_latin_test.exs:46: (test)
+
+  * test consecutive consonants are treated like a single consonant word beginning with sch  * test consecutive consonants are treated like a single consonant word beginning with sch (skipped)
+  * test ay is added to words that start with vowels word beginning with a  * test ay is added to words that start with vowels word beginning with a (0.02ms)
+  * test consecutive consonants are treated like a single consonant word beginning with qu and a preceding consonant  * test consecutive consonants are treated like a single consonant word beginning with qu and a preceding consonant (skipped)
+  * test consecutive consonants are treated like a single consonant word beginning with thr  * test consecutive consonants are treated like a single consonant word beginning with thr (skipped)
+  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with two consonants  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with two consonants (skipped)
+  * test 'x' and 'y', when followed by a consonant, are treated like a vowel word beginning with y, followed by a consonant  * test 'x' and 'y', when followed by a consonant, are treated like a vowel word beginning with y, followed by a consonant (skipped)
+  * test ay is added to words that start with vowels word beginning with a vowel and followed by a qu  * test ay is added to words that start with vowels word beginning with a vowel and followed by a qu (0.01ms)
+  * test ay is added to words that start with vowels word beginning with o  * test ay is added to words that start with vowels word beginning with o (0.01ms)
+  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with y  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with y (skipped)
+  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with three consonants  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with three consonants (skipped)
+  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with q without a following u  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with q without a following u (skipped)
+  * test 'x' and 'y', when followed by a consonant, are treated like a vowel word beginning with xb  * test 'x' and 'y', when followed by a consonant, are treated like a vowel word beginning with xb (skipped)
+  * test 'x' and 'y', when followed by a consonant, are treated like a vowel word beginning with y, followed by another consonant  * test 'x' and 'y', when followed by a consonant, are treated like a vowel word beginning with y, followed by another consonant (skipped)
+  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with a serie of consonants : aliens speak Pig Latin too  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with a serie of consonants : aliens speak Pig Latin too (skipped)
+  * test ay is added to words that start with vowels word beginning with u  * test ay is added to words that start with vowels word beginning with u (0.01ms)
+  * test consecutive consonants are treated like a single consonant word beginning with ch  * test consecutive consonants are treated like a single consonant word beginning with ch (skipped)
+  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with k  * test first consonant letters and ay are moved to the end of words that start with consonants word beginning with k (skipped)
+
+
+Finished in 0.1 seconds (0.1s on load, 0.01s on tests)
+25 tests, 1 failure, 18 skipped
+
+Randomized with seed 887631
